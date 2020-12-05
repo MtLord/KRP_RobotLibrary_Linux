@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/yutakamiyama/KRP_RoboLibrary/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f6629/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f6629.dir/build.make CMakeFiles/cmTC_f6629.dir/build
+make[1]: ディレクトリ '/home/yutakamiyama/KRP_RoboLibrary/build/CMakeFiles/CMakeTmp' に入ります
+Building CXX object CMakeFiles/cmTC_f6629.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -Wall    -std=gnu++11 -o CMakeFiles/cmTC_f6629.dir/CheckSymbolExists.cxx.o -c /home/yutakamiyama/KRP_RoboLibrary/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_f6629
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f6629.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall     CMakeFiles/cmTC_f6629.dir/CheckSymbolExists.cxx.o  -o cmTC_f6629 
+CMakeFiles/cmTC_f6629.dir/CheckSymbolExists.cxx.o: 関数 `main' 内:
+CheckSymbolExists.cxx:(.text+0x1b): `pthread_create' に対する定義されていない参照です
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_f6629.dir/build.make:97: recipe for target 'cmTC_f6629' failed
+make[1]: *** [cmTC_f6629] Error 1
+make[1]: ディレクトリ '/home/yutakamiyama/KRP_RoboLibrary/build/CMakeFiles/CMakeTmp' から出ます
+Makefile:126: recipe for target 'cmTC_f6629/fast' failed
+make: *** [cmTC_f6629/fast] Error 2
+
+File /home/yutakamiyama/KRP_RoboLibrary/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/yutakamiyama/KRP_RoboLibrary/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bed49/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bed49.dir/build.make CMakeFiles/cmTC_bed49.dir/build
+make[1]: ディレクトリ '/home/yutakamiyama/KRP_RoboLibrary/build/CMakeFiles/CMakeTmp' に入ります
+Building CXX object CMakeFiles/cmTC_bed49.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -Wall -DCHECK_FUNCTION_EXISTS=pthread_create   -std=gnu++11 -o CMakeFiles/cmTC_bed49.dir/CheckFunctionExists.cxx.o -c /home/yutakamiyama/KRP_RoboLibrary/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_bed49
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bed49.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_bed49.dir/CheckFunctionExists.cxx.o  -o cmTC_bed49 -lpthreads 
+/usr/bin/ld: -lpthreads が見つかりません
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_bed49.dir/build.make:97: recipe for target 'cmTC_bed49' failed
+make[1]: *** [cmTC_bed49] Error 1
+make[1]: ディレクトリ '/home/yutakamiyama/KRP_RoboLibrary/build/CMakeFiles/CMakeTmp' から出ます
+Makefile:126: recipe for target 'cmTC_bed49/fast' failed
+make: *** [cmTC_bed49/fast] Error 2
+
+

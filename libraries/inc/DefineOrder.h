@@ -1,0 +1,23 @@
+#ifndef DEFINEORDER_H_
+#define DEFINEORDER_H_
+
+enum
+{
+    MOTORE_SET_DUTY = 0x72,
+    AIR_OPEN = 0x21,
+    AIR_CLOSE = 0x22,
+    Get_SENSOR = 0x31,
+    GET_MICROSWITCH = 0x32,
+    SETPPER_SET_PULSE = 0x51,
+    GET_LOCA = 0x11,
+    SET_INIT_POSE = 0x10,
+    SET_ENCO_POSE = 0x12,
+    SET_ENCO_PULSE = 0x13,
+    GRT_ENCODER_COUNT = 0x14,
+    SET_ENC_DIAMTER = 0x15,
+    SET_ENC_DIRECTION = 0x16,
+    GET_SWITCH = 0xA1
+
+};
+
+#endif

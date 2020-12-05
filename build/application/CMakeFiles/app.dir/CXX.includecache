@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../libraries/inc/RobotTimer.hpp
+signal.h
+-
+memory.h
+-
+unistd.h
+-
+time.h
+-
+sys/time.h
+-
+string.h
+-
+stdio.h
+-
+
+/home/yutakamiyama/KRP_RoboLibrary/application/main.cpp
+RobotTimer.hpp
+/home/yutakamiyama/KRP_RoboLibrary/application/RobotTimer.hpp
+
