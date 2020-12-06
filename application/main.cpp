@@ -1,7 +1,8 @@
 #include "RobotTimer.hpp"
-
+#include "LowlayerHandel.hpp"
 int main()
 {
+    LowlayerHandelTypedef hlow;
     RobotTimer tim;
     tim.Init(5);
     tim.Start();
@@ -10,6 +11,7 @@ int main()
     {
         /*********usercode begin***********/
 
+        hlow.loca->SendReqest();
         /***********usercode end******************/
         pause();
     }
