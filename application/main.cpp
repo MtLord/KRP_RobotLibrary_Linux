@@ -1,5 +1,6 @@
 #include "RobotTimer.hpp"
 #include "LowlayerHandel.hpp"
+bool RobotTimer::intflag = false;
 int main()
 {
     LowlayerHandelTypedef hlow;
@@ -9,11 +10,14 @@ int main()
 
     while (1)
     {
-        /*********usercode begin***********/
+        if (RobotTimer::intflag)
+        {
+            /*********usercode begin***********/
 
-        hlow.loca->SendReqest();
-        /***********usercode end******************/
-        pause();
+            hlow.loca->SendReqest();
+            /***********usercode end******************/
+            RobotTimer::intflag = false;
+        }
     }
 
     return 0;

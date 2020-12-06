@@ -17,6 +17,7 @@ private:
     struct itimerspec itval;
 
 public:
+    static bool intflag;
     RobotTimer()
     {
         memset(&act, 0, sizeof(struct sigaction));
@@ -29,6 +30,7 @@ public:
 
     static void timer_handler(int signum)
     {
+        intflag = true;
     }
     int Init(int period_ms)
     {
