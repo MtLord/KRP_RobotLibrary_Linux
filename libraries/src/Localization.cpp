@@ -38,9 +38,9 @@ void OddmePose::SetDiameter(float d)
     serial->SetSendData(SET_ENC_DIAMTER, 0, d, 4);
 }
 
-void OddmePose::SetEncPulse(short p)
+void OddmePose::SetEncPulse(float p)
 {
-    serial->SetSendData(SET_ENCO_PULSE, 0, p, 2);
+    serial->SetSendData(SET_ENCO_PULSE, 0, p, 4);
 }
 
 float OddmePose::GetX()
