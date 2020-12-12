@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yutakamiyama/KRP_RoboLibrary
+CMAKE_SOURCE_DIR = /home/yutakamiyama/KRP_RobotLibrary
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yutakamiyama/KRP_RoboLibrary/build
+CMAKE_BINARY_DIR = /home/yutakamiyama/KRP_RobotLibrary/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yutakamiyama/KRP_RoboLibrary/build/CMakeFiles /home/yutakamiyama/KRP_RoboLibrary/build/libraries/src/CMakeFiles/progress.marks
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(MAKE) -f CMakeFiles/Makefile2 libraries/src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yutakamiyama/KRP_RoboLibrary/build/CMakeFiles 0
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yutakamiyama/KRP_RobotLibrary/build/CMakeFiles /home/yutakamiyama/KRP_RobotLibrary/build/libraries/src/CMakeFiles/progress.marks
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f CMakeFiles/Makefile2 libraries/src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yutakamiyama/KRP_RobotLibrary/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(MAKE) -f CMakeFiles/Makefile2 libraries/src/clean
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f CMakeFiles/Makefile2 libraries/src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(MAKE) -f CMakeFiles/Makefile2 libraries/src/preinstall
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f CMakeFiles/Makefile2 libraries/src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(MAKE) -f CMakeFiles/Makefile2 libraries/src/preinstall
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f CMakeFiles/Makefile2 libraries/src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 libraries/src/CMakeFiles/interim.dir/rule:
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(MAKE) -f CMakeFiles/Makefile2 libraries/src/CMakeFiles/interim.dir/rule
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f CMakeFiles/Makefile2 libraries/src/CMakeFiles/interim.dir/rule
 .PHONY : libraries/src/CMakeFiles/interim.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ interim: libraries/src/CMakeFiles/interim.dir/rule
 
 # fast build rule for target.
 interim/fast:
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/build
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/build
 .PHONY : interim/fast
 
 Aircylinder.o: Aircylinder.cpp.o
@@ -131,7 +131,7 @@ Aircylinder.o: Aircylinder.cpp.o
 
 # target to build an object file
 Aircylinder.cpp.o:
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/Aircylinder.cpp.o
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/Aircylinder.cpp.o
 .PHONY : Aircylinder.cpp.o
 
 Aircylinder.i: Aircylinder.cpp.i
@@ -140,7 +140,7 @@ Aircylinder.i: Aircylinder.cpp.i
 
 # target to preprocess a source file
 Aircylinder.cpp.i:
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/Aircylinder.cpp.i
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/Aircylinder.cpp.i
 .PHONY : Aircylinder.cpp.i
 
 Aircylinder.s: Aircylinder.cpp.s
@@ -149,7 +149,7 @@ Aircylinder.s: Aircylinder.cpp.s
 
 # target to generate assembly for a file
 Aircylinder.cpp.s:
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/Aircylinder.cpp.s
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/Aircylinder.cpp.s
 .PHONY : Aircylinder.cpp.s
 
 CommuBase.o: CommuBase.cpp.o
@@ -158,7 +158,7 @@ CommuBase.o: CommuBase.cpp.o
 
 # target to build an object file
 CommuBase.cpp.o:
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/CommuBase.cpp.o
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/CommuBase.cpp.o
 .PHONY : CommuBase.cpp.o
 
 CommuBase.i: CommuBase.cpp.i
@@ -167,7 +167,7 @@ CommuBase.i: CommuBase.cpp.i
 
 # target to preprocess a source file
 CommuBase.cpp.i:
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/CommuBase.cpp.i
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/CommuBase.cpp.i
 .PHONY : CommuBase.cpp.i
 
 CommuBase.s: CommuBase.cpp.s
@@ -176,8 +176,35 @@ CommuBase.s: CommuBase.cpp.s
 
 # target to generate assembly for a file
 CommuBase.cpp.s:
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/CommuBase.cpp.s
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/CommuBase.cpp.s
 .PHONY : CommuBase.cpp.s
+
+Joystic.o: Joystic.cpp.o
+
+.PHONY : Joystic.o
+
+# target to build an object file
+Joystic.cpp.o:
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/Joystic.cpp.o
+.PHONY : Joystic.cpp.o
+
+Joystic.i: Joystic.cpp.i
+
+.PHONY : Joystic.i
+
+# target to preprocess a source file
+Joystic.cpp.i:
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/Joystic.cpp.i
+.PHONY : Joystic.cpp.i
+
+Joystic.s: Joystic.cpp.s
+
+.PHONY : Joystic.s
+
+# target to generate assembly for a file
+Joystic.cpp.s:
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/Joystic.cpp.s
+.PHONY : Joystic.cpp.s
 
 Localization.o: Localization.cpp.o
 
@@ -185,7 +212,7 @@ Localization.o: Localization.cpp.o
 
 # target to build an object file
 Localization.cpp.o:
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/Localization.cpp.o
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/Localization.cpp.o
 .PHONY : Localization.cpp.o
 
 Localization.i: Localization.cpp.i
@@ -194,7 +221,7 @@ Localization.i: Localization.cpp.i
 
 # target to preprocess a source file
 Localization.cpp.i:
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/Localization.cpp.i
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/Localization.cpp.i
 .PHONY : Localization.cpp.i
 
 Localization.s: Localization.cpp.s
@@ -203,7 +230,7 @@ Localization.s: Localization.cpp.s
 
 # target to generate assembly for a file
 Localization.cpp.s:
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/Localization.cpp.s
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/Localization.cpp.s
 .PHONY : Localization.cpp.s
 
 Motor.o: Motor.cpp.o
@@ -212,7 +239,7 @@ Motor.o: Motor.cpp.o
 
 # target to build an object file
 Motor.cpp.o:
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/Motor.cpp.o
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/Motor.cpp.o
 .PHONY : Motor.cpp.o
 
 Motor.i: Motor.cpp.i
@@ -221,7 +248,7 @@ Motor.i: Motor.cpp.i
 
 # target to preprocess a source file
 Motor.cpp.i:
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/Motor.cpp.i
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/Motor.cpp.i
 .PHONY : Motor.cpp.i
 
 Motor.s: Motor.cpp.s
@@ -230,7 +257,7 @@ Motor.s: Motor.cpp.s
 
 # target to generate assembly for a file
 Motor.cpp.s:
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/Motor.cpp.s
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/Motor.cpp.s
 .PHONY : Motor.cpp.s
 
 MotorSystem.o: MotorSystem.cpp.o
@@ -239,7 +266,7 @@ MotorSystem.o: MotorSystem.cpp.o
 
 # target to build an object file
 MotorSystem.cpp.o:
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/MotorSystem.cpp.o
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/MotorSystem.cpp.o
 .PHONY : MotorSystem.cpp.o
 
 MotorSystem.i: MotorSystem.cpp.i
@@ -248,7 +275,7 @@ MotorSystem.i: MotorSystem.cpp.i
 
 # target to preprocess a source file
 MotorSystem.cpp.i:
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/MotorSystem.cpp.i
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/MotorSystem.cpp.i
 .PHONY : MotorSystem.cpp.i
 
 MotorSystem.s: MotorSystem.cpp.s
@@ -257,7 +284,7 @@ MotorSystem.s: MotorSystem.cpp.s
 
 # target to generate assembly for a file
 MotorSystem.cpp.s:
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/MotorSystem.cpp.s
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/MotorSystem.cpp.s
 .PHONY : MotorSystem.cpp.s
 
 RobotSerial.o: RobotSerial.cpp.o
@@ -266,7 +293,7 @@ RobotSerial.o: RobotSerial.cpp.o
 
 # target to build an object file
 RobotSerial.cpp.o:
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/RobotSerial.cpp.o
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/RobotSerial.cpp.o
 .PHONY : RobotSerial.cpp.o
 
 RobotSerial.i: RobotSerial.cpp.i
@@ -275,7 +302,7 @@ RobotSerial.i: RobotSerial.cpp.i
 
 # target to preprocess a source file
 RobotSerial.cpp.i:
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/RobotSerial.cpp.i
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/RobotSerial.cpp.i
 .PHONY : RobotSerial.cpp.i
 
 RobotSerial.s: RobotSerial.cpp.s
@@ -284,7 +311,7 @@ RobotSerial.s: RobotSerial.cpp.s
 
 # target to generate assembly for a file
 RobotSerial.cpp.s:
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/RobotSerial.cpp.s
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/RobotSerial.cpp.s
 .PHONY : RobotSerial.cpp.s
 
 RotaryEncoder.o: RotaryEncoder.cpp.o
@@ -293,7 +320,7 @@ RotaryEncoder.o: RotaryEncoder.cpp.o
 
 # target to build an object file
 RotaryEncoder.cpp.o:
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/RotaryEncoder.cpp.o
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/RotaryEncoder.cpp.o
 .PHONY : RotaryEncoder.cpp.o
 
 RotaryEncoder.i: RotaryEncoder.cpp.i
@@ -302,7 +329,7 @@ RotaryEncoder.i: RotaryEncoder.cpp.i
 
 # target to preprocess a source file
 RotaryEncoder.cpp.i:
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/RotaryEncoder.cpp.i
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/RotaryEncoder.cpp.i
 .PHONY : RotaryEncoder.cpp.i
 
 RotaryEncoder.s: RotaryEncoder.cpp.s
@@ -311,7 +338,7 @@ RotaryEncoder.s: RotaryEncoder.cpp.s
 
 # target to generate assembly for a file
 RotaryEncoder.cpp.s:
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/RotaryEncoder.cpp.s
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/RotaryEncoder.cpp.s
 .PHONY : RotaryEncoder.cpp.s
 
 Sensor.o: Sensor.cpp.o
@@ -320,7 +347,7 @@ Sensor.o: Sensor.cpp.o
 
 # target to build an object file
 Sensor.cpp.o:
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/Sensor.cpp.o
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/Sensor.cpp.o
 .PHONY : Sensor.cpp.o
 
 Sensor.i: Sensor.cpp.i
@@ -329,7 +356,7 @@ Sensor.i: Sensor.cpp.i
 
 # target to preprocess a source file
 Sensor.cpp.i:
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/Sensor.cpp.i
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/Sensor.cpp.i
 .PHONY : Sensor.cpp.i
 
 Sensor.s: Sensor.cpp.s
@@ -338,7 +365,7 @@ Sensor.s: Sensor.cpp.s
 
 # target to generate assembly for a file
 Sensor.cpp.s:
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/Sensor.cpp.s
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(MAKE) -f libraries/src/CMakeFiles/interim.dir/build.make libraries/src/CMakeFiles/interim.dir/Sensor.cpp.s
 .PHONY : Sensor.cpp.s
 
 # Help Target
@@ -356,6 +383,9 @@ help:
 	@echo "... CommuBase.o"
 	@echo "... CommuBase.i"
 	@echo "... CommuBase.s"
+	@echo "... Joystic.o"
+	@echo "... Joystic.i"
+	@echo "... Joystic.s"
 	@echo "... Localization.o"
 	@echo "... Localization.i"
 	@echo "... Localization.s"
@@ -385,6 +415,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/yutakamiyama/KRP_RoboLibrary/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/yutakamiyama/KRP_RobotLibrary/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

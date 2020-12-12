@@ -16,6 +16,24 @@ RobotSerial.hpp
 
 ../libraries/inc/DefineOrder.h
 
+../libraries/inc/Joystic.hpp
+linux/joystick.h
+-
+linux/input.h
+-
+unistd.h
+-
+fcntl.h
+-
+stdio.h
+-
+unistd.h
+-
+time.h
+-
+pthread.h
+-
+
 ../libraries/inc/Localization.hpp
 math.h
 ../libraries/inc/math.h
@@ -44,39 +62,43 @@ CommuBase.hpp
 CommuBase.hpp
 ../libraries/inc/CommuBase.hpp
 
-/home/yutakamiyama/KRP_RoboLibrary/libraries/src/Aircylinder.cpp
+/home/yutakamiyama/KRP_RobotLibrary/libraries/src/Aircylinder.cpp
 Aircylinder.hpp
-/home/yutakamiyama/KRP_RoboLibrary/libraries/src/Aircylinder.hpp
+/home/yutakamiyama/KRP_RobotLibrary/libraries/src/Aircylinder.hpp
 DefineOrder.h
-/home/yutakamiyama/KRP_RoboLibrary/libraries/src/DefineOrder.h
+/home/yutakamiyama/KRP_RobotLibrary/libraries/src/DefineOrder.h
 
-/home/yutakamiyama/KRP_RoboLibrary/libraries/src/CommuBase.cpp
+/home/yutakamiyama/KRP_RobotLibrary/libraries/src/CommuBase.cpp
 CommuBase.hpp
-/home/yutakamiyama/KRP_RoboLibrary/libraries/src/CommuBase.hpp
+/home/yutakamiyama/KRP_RobotLibrary/libraries/src/CommuBase.hpp
 
-/home/yutakamiyama/KRP_RoboLibrary/libraries/src/Localization.cpp
+/home/yutakamiyama/KRP_RobotLibrary/libraries/src/Joystic.cpp
+Joystic.hpp
+/home/yutakamiyama/KRP_RobotLibrary/libraries/src/Joystic.hpp
+
+/home/yutakamiyama/KRP_RobotLibrary/libraries/src/Localization.cpp
 Localization.hpp
-/home/yutakamiyama/KRP_RoboLibrary/libraries/src/Localization.hpp
+/home/yutakamiyama/KRP_RobotLibrary/libraries/src/Localization.hpp
 DefineOrder.h
-/home/yutakamiyama/KRP_RoboLibrary/libraries/src/DefineOrder.h
+/home/yutakamiyama/KRP_RobotLibrary/libraries/src/DefineOrder.h
 
-/home/yutakamiyama/KRP_RoboLibrary/libraries/src/Motor.cpp
+/home/yutakamiyama/KRP_RobotLibrary/libraries/src/Motor.cpp
 Motor.hpp
-/home/yutakamiyama/KRP_RoboLibrary/libraries/src/Motor.hpp
+/home/yutakamiyama/KRP_RobotLibrary/libraries/src/Motor.hpp
 DefineOrder.h
-/home/yutakamiyama/KRP_RoboLibrary/libraries/src/DefineOrder.h
+/home/yutakamiyama/KRP_RobotLibrary/libraries/src/DefineOrder.h
 
-/home/yutakamiyama/KRP_RoboLibrary/libraries/src/MotorSystem.cpp
+/home/yutakamiyama/KRP_RobotLibrary/libraries/src/MotorSystem.cpp
 MotorSystem.hpp
-/home/yutakamiyama/KRP_RoboLibrary/libraries/src/MotorSystem.hpp
+/home/yutakamiyama/KRP_RobotLibrary/libraries/src/MotorSystem.hpp
 MotorSystemDefintion.hpp
-/home/yutakamiyama/KRP_RoboLibrary/libraries/src/MotorSystemDefintion.hpp
+/home/yutakamiyama/KRP_RobotLibrary/libraries/src/MotorSystemDefintion.hpp
 stdio.h
 -
 
-/home/yutakamiyama/KRP_RoboLibrary/libraries/src/RobotSerial.cpp
+/home/yutakamiyama/KRP_RobotLibrary/libraries/src/RobotSerial.cpp
 RobotSerial.hpp
-/home/yutakamiyama/KRP_RoboLibrary/libraries/src/RobotSerial.hpp
+/home/yutakamiyama/KRP_RobotLibrary/libraries/src/RobotSerial.hpp
 stdio.h
 -
 sys/types.h
@@ -104,17 +126,17 @@ ctime
 sys/time.h
 -
 cstring
-/home/yutakamiyama/KRP_RoboLibrary/libraries/src/cstring
+/home/yutakamiyama/KRP_RobotLibrary/libraries/src/cstring
 
-/home/yutakamiyama/KRP_RoboLibrary/libraries/src/RotaryEncoder.cpp
+/home/yutakamiyama/KRP_RobotLibrary/libraries/src/RotaryEncoder.cpp
 RotaryEncoder.hpp
-/home/yutakamiyama/KRP_RoboLibrary/libraries/src/RotaryEncoder.hpp
+/home/yutakamiyama/KRP_RobotLibrary/libraries/src/RotaryEncoder.hpp
 DefineOrder.h
-/home/yutakamiyama/KRP_RoboLibrary/libraries/src/DefineOrder.h
+/home/yutakamiyama/KRP_RobotLibrary/libraries/src/DefineOrder.h
 
-/home/yutakamiyama/KRP_RoboLibrary/libraries/src/Sensor.cpp
+/home/yutakamiyama/KRP_RobotLibrary/libraries/src/Sensor.cpp
 Sensor.hpp
-/home/yutakamiyama/KRP_RoboLibrary/libraries/src/Sensor.hpp
+/home/yutakamiyama/KRP_RobotLibrary/libraries/src/Sensor.hpp
 DefineOrder.h
-/home/yutakamiyama/KRP_RoboLibrary/libraries/src/DefineOrder.h
+/home/yutakamiyama/KRP_RobotLibrary/libraries/src/DefineOrder.h
 

@@ -1,1 +1,1 @@
-/usr/bin/c++  -Wall   CMakeFiles/app.dir/main.cpp.o  -o app ../libraries/src/libinterim.a /usr/lib/x86_64-linux-gnu/libboost_system.so -lpthread -lrt -lpthread 
+/usr/bin/c++  -Wall -std=c++11   CMakeFiles/app.dir/main.cpp.o  -o app ../libraries/src/libinterim.a /usr/lib/x86_64-linux-gnu/libboost_system.so -lpthread -lrt -lpthread 

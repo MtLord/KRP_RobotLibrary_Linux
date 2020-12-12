@@ -11,6 +11,9 @@ libraries/src/CMakeFiles/interim.dir/CommuBase.cpp.o: ../libraries/inc/CommuBase
 libraries/src/CMakeFiles/interim.dir/CommuBase.cpp.o: ../libraries/inc/RobotSerial.hpp
 libraries/src/CMakeFiles/interim.dir/CommuBase.cpp.o: ../libraries/src/CommuBase.cpp
 
+libraries/src/CMakeFiles/interim.dir/Joystic.cpp.o: ../libraries/inc/Joystic.hpp
+libraries/src/CMakeFiles/interim.dir/Joystic.cpp.o: ../libraries/src/Joystic.cpp
+
 libraries/src/CMakeFiles/interim.dir/Localization.cpp.o: ../libraries/inc/CommuBase.hpp
 libraries/src/CMakeFiles/interim.dir/Localization.cpp.o: ../libraries/inc/DefineOrder.h
 libraries/src/CMakeFiles/interim.dir/Localization.cpp.o: ../libraries/inc/Localization.hpp

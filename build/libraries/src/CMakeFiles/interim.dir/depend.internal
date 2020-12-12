@@ -6,41 +6,44 @@ libraries/src/CMakeFiles/interim.dir/Aircylinder.cpp.o
  ../libraries/inc/CommuBase.hpp
  ../libraries/inc/DefineOrder.h
  ../libraries/inc/RobotSerial.hpp
- /home/yutakamiyama/KRP_RoboLibrary/libraries/src/Aircylinder.cpp
+ /home/yutakamiyama/KRP_RobotLibrary/libraries/src/Aircylinder.cpp
 libraries/src/CMakeFiles/interim.dir/CommuBase.cpp.o
  ../libraries/inc/CommuBase.hpp
  ../libraries/inc/RobotSerial.hpp
- /home/yutakamiyama/KRP_RoboLibrary/libraries/src/CommuBase.cpp
+ /home/yutakamiyama/KRP_RobotLibrary/libraries/src/CommuBase.cpp
+libraries/src/CMakeFiles/interim.dir/Joystic.cpp.o
+ ../libraries/inc/Joystic.hpp
+ /home/yutakamiyama/KRP_RobotLibrary/libraries/src/Joystic.cpp
 libraries/src/CMakeFiles/interim.dir/Localization.cpp.o
  ../libraries/inc/CommuBase.hpp
  ../libraries/inc/DefineOrder.h
  ../libraries/inc/Localization.hpp
  ../libraries/inc/RobotSerial.hpp
- /home/yutakamiyama/KRP_RoboLibrary/libraries/src/Localization.cpp
+ /home/yutakamiyama/KRP_RobotLibrary/libraries/src/Localization.cpp
 libraries/src/CMakeFiles/interim.dir/Motor.cpp.o
  ../libraries/inc/CommuBase.hpp
  ../libraries/inc/DefineOrder.h
  ../libraries/inc/Motor.hpp
  ../libraries/inc/RobotSerial.hpp
- /home/yutakamiyama/KRP_RoboLibrary/libraries/src/Motor.cpp
+ /home/yutakamiyama/KRP_RobotLibrary/libraries/src/Motor.cpp
 libraries/src/CMakeFiles/interim.dir/MotorSystem.cpp.o
  ../libraries/inc/CommuBase.hpp
  ../libraries/inc/MotorSystem.hpp
  ../libraries/inc/MotorSystemDefintion.hpp
  ../libraries/inc/RobotSerial.hpp
- /home/yutakamiyama/KRP_RoboLibrary/libraries/src/MotorSystem.cpp
+ /home/yutakamiyama/KRP_RobotLibrary/libraries/src/MotorSystem.cpp
 libraries/src/CMakeFiles/interim.dir/RobotSerial.cpp.o
  ../libraries/inc/RobotSerial.hpp
- /home/yutakamiyama/KRP_RoboLibrary/libraries/src/RobotSerial.cpp
+ /home/yutakamiyama/KRP_RobotLibrary/libraries/src/RobotSerial.cpp
 libraries/src/CMakeFiles/interim.dir/RotaryEncoder.cpp.o
  ../libraries/inc/CommuBase.hpp
  ../libraries/inc/DefineOrder.h
  ../libraries/inc/RobotSerial.hpp
  ../libraries/inc/RotaryEncoder.hpp
- /home/yutakamiyama/KRP_RoboLibrary/libraries/src/RotaryEncoder.cpp
+ /home/yutakamiyama/KRP_RobotLibrary/libraries/src/RotaryEncoder.cpp
 libraries/src/CMakeFiles/interim.dir/Sensor.cpp.o
  ../libraries/inc/CommuBase.hpp
  ../libraries/inc/DefineOrder.h
  ../libraries/inc/RobotSerial.hpp
  ../libraries/inc/Sensor.hpp
- /home/yutakamiyama/KRP_RoboLibrary/libraries/src/Sensor.cpp
+ /home/yutakamiyama/KRP_RobotLibrary/libraries/src/Sensor.cpp

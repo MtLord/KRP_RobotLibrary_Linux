@@ -1,4 +1,4 @@
-# Install script for directory: /home/yutakamiyama/KRP_RoboLibrary/libraries
+# Install script for directory: /home/yutakamiyama/KRP_RobotLibrary/libraries
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/yutakamiyama/KRP_RoboLibrary/build/libraries/src/cmake_install.cmake")
+  include("/home/yutakamiyama/KRP_RobotLibrary/build/libraries/src/cmake_install.cmake")
 
 endif()
 

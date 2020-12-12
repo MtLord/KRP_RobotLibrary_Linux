@@ -1,22 +1,39 @@
 #ifndef _JOYSTIC_HPP_
 #define _JOYSTIC_HPP_
+#include <linux/joystick.h>
+#include <linux/input.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <time.h>
+#include <pthread.h>
+
+#define BUTTON_DATA_MAX 17
+#define STICK_DATA_MAX 7
 
 class Joystic
 {
 private:
-    short Data[8] = {
-        0,
-    };
-    short Maskbyte(int matrixnum, int shiftnum);
+        static int fd;
+    static struct js_event event;
+    static pthread_mutex_t hmutex; //mutex hunder
+    static pthread_t hthread;
 
 public:
-    void SetconData();
-    void SendRequest();
-    void begin();
+    static short ButtonData[BUTTON_DATA_MAX];
+    static short StickData[STICK_DATA_MAX];
+    ~Joystic()
+    {
+        close(fd);
+    }
+    int Begin();
+    static void SetconData();
     short SELECT();
     short L3();
     short R3();
     short START();
+    short PS();
     short UP();
     short RIGHT();
     short DOWN();

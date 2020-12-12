@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/interim.dir/RobotSerial.cpp.o"
   "CMakeFiles/interim.dir/RotaryEncoder.cpp.o"
   "CMakeFiles/interim.dir/Sensor.cpp.o"
+  "CMakeFiles/interim.dir/Joystic.cpp.o"
   "libinterim.pdb"
   "libinterim.a"
 )

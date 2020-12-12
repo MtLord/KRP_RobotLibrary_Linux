@@ -1,4 +1,4 @@
-# Install script for directory: /home/yutakamiyama/KRP_RoboLibrary/libraries/src
+# Install script for directory: /home/yutakamiyama/KRP_RobotLibrary/libraries/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

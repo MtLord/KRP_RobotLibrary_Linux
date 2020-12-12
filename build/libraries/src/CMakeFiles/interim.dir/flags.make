@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/yutakamiyama/KRP_RoboLibrary/libraries/inc -I/home/yutakamiyama/KRP_RoboLibrary/libraries/include 
+CXX_INCLUDES = -I/home/yutakamiyama/KRP_RobotLibrary/libraries/inc 
 

@@ -9,7 +9,8 @@ add_library(interim
     RobotSerial.cpp
     RotaryEncoder.cpp
     Sensor.cpp
+    Joystic.cpp
   )
 
 # PROJECT_SOURCE_DIRはこのプロジェクトのルートディレクトリの絶対パス
-target_include_directories(interim PUBLIC ${PROJECT_SOURCE_DIR}/libraries/include)
+target_include_directories(interim PUBLIC ${PROJECT_SOURCE_DIR}/libraries/inc)

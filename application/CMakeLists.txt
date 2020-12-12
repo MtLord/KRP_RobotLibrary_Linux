@@ -1,5 +1,5 @@
 set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_FLAGS "-Wall")
+set(CMAKE_CXX_FLAGS "-Wall -std=c++11")
 set(PROJECT_NAME app)
 find_package(Boost 1.65.1 REQUIRED COMPONENTS date_time system)
 find_package(Threads REQUIRED)
