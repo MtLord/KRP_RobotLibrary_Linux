@@ -6,9 +6,9 @@ long Encoder::countdata[8] = {
 
 void Encoder::Sendreqest()
 {
-    serial->SetSendData(GRT_ENCODER_COUNT, 0x1, requestdata, requestlen);
-    serial->SetReceevieData16();
-    if ((serial->orderid == GRT_ENCODER_COUNT) && (serial->actuid == 0x1))
+    serial->SetSendData(GRT_ENCODER_COUNT, 0x1, requestdata, requestlen);  //送信リクエスト
+    serial->SetReceevieData16();                                           //short型の変数の返値
+    if ((serial->orderid == GRT_ENCODER_COUNT) && (serial->actuid == 0x1)) //4つのエンコーダの値を2回に分けて送信
     {
         countdata[0] = serial->data_s1;
         countdata[1] = serial->data_s2;

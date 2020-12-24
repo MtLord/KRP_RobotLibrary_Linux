@@ -17,7 +17,7 @@
 
 /***************定義変数軍**********************/
 #define SERIAL_PORT "/dev/ttyACM0"
-#define STB 0x7E
+#define STB 0x9E
 #define ENB 0xFF
 /***********************************************/
 
@@ -41,7 +41,7 @@ int RobotSerial::PortConfig()
     fd = open(SERIAL_PORT, O_RDWR); // デバイスをオープンする
     if (fd < 0)
     {
-        printf("open error\n");
+        printf("serial port open error\n");
         return -1;
     }
     else
@@ -60,10 +60,10 @@ int RobotSerial::PortConfig()
 
     tcsetattr(fd, TCSANOW, &tio); // デバイスに設定を行う
     ioctl(fd, TCSETS, &tio);      // ポートの設定を有効にする
-    printf("port config finish\n");
+    printf("port config success\n");
 }
 
-int RobotSerial::GetByte(int byte, unsigned char *buf)
+int RobotSerial::GetByte()
 {
     int i = 0;
     while (1)
@@ -80,7 +80,7 @@ int RobotSerial::GetByte(int byte, unsigned char *buf)
         }
         if (getchar == ENB && STB_RECIEVED == 1)
         {
-            buf = rxbuf;
+            //buf = rxbuf;
             STB_RECIEVED = 0;
             i = 0;
             break;

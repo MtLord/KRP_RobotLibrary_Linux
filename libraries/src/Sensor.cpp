@@ -41,19 +41,22 @@ unsigned short Sensor::GetValue()
 
 void MicroSw::SendRequest()
 {
-    if (this->boardnum == 1)
-    {
-        serial->SetSendData(GET_MICROSWITCH, 0x1, requestdata, requestlen);
-    }
+
+    serial->SetSendData(GET_MICROSWITCH, boardnum, requestdata, requestlen);
+
     this->SetData();
 }
 
 void MicroSw::SetData()
 {
-    serial->GetByte(7, rxbuff);
-    if (((rxbuff[1]) & 0xf) == 1)
+    serial->GetByte();
+    if (serial->rxbuf[2] == 1)
     {
-        Data[0] = rxbuff[2];
+        Data[0] = serial->rxbuf[3];
+    }
+    else if (serial->rxbuf[2] == 2)
+    {
+        Data[1] = serial->rxbuf[4];
     }
 }
 

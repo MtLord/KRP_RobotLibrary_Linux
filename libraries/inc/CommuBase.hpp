@@ -5,7 +5,7 @@ class CommuBase : public RobotSerial
 {
 private:
 protected:
-    unsigned char rxbuff[8];
+    unsigned char *rxbuff;
     unsigned char txbuff[8];
 
 public:

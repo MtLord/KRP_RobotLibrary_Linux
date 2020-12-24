@@ -14,7 +14,6 @@ enum
     SET_ENCO_PULSE = 0x13,
     GRT_ENCODER_COUNT = 0x14,
     SET_ENC_DIAMTER = 0x15,
-    GET_SWITCH = 0xA1
 
 };
 

@@ -2,60 +2,52 @@
 
 int CommuBase::SetReceevieData() //現在値の返却があるまでループ
 {
-    GetByte(7, rxbuff);
-    orderid = (rxbuff[1] >> 4) & 0xf;
-    actuid = (rxbuff[1]) & 0xf;
-    ((unsigned char *)&data)[0] = rxbuff[2];
-    ((unsigned char *)&data)[1] = rxbuff[3];
-    ((unsigned char *)&data)[2] = rxbuff[4];
-    ((unsigned char *)&data)[3] = rxbuff[5];
+    GetByte();
+    orderid = rxbuf[1];
+    actuid = rxbuf[2];
+    ((unsigned char *)&data)[0] = rxbuf[3];
+    ((unsigned char *)&data)[1] = rxbuf[4];
+    ((unsigned char *)&data)[2] = rxbuf[5];
+    ((unsigned char *)&data)[3] = rxbuf[6];
     return 0;
 }
 
 int CommuBase::SetReceevieData16()
 {
-    GetByte(7, rxbuff);
-    orderid = (rxbuff[1] >> 4) & 0xf;
-    actuid = (rxbuff[1]) & 0xf;
-    ((unsigned char *)&data_s1)[0] = rxbuff[2];
-    ((unsigned char *)&data_s1)[1] = rxbuff[3];
-    ((unsigned char *)&data_s2)[0] = rxbuff[4];
-    ((unsigned char *)&data_s2)[1] = rxbuff[5];
+    GetByte();
+    orderid = rxbuf[1];
+    actuid = rxbuf[2];
+    ((unsigned char *)&data_s1)[0] = rxbuf[3];
+    ((unsigned char *)&data_s1)[1] = rxbuf[4];
+    ((unsigned char *)&data_s2)[0] = rxbuf[5];
+    ((unsigned char *)&data_s2)[1] = rxbuf[6];
     return 0;
 }
 
 int CommuBase::SetSendData(int cmd, short comid, float data, unsigned char Len)
 {
-    txbuff[0] = cmd << 4 | comid; //命令パケット
+    txbuff[0] = cmd;   //命令パケット
+    txbuff[1] = comid; //アクチュエータid
     for (int i = 0; i < Len; i++)
     {
-        txbuff[i + 1] = ((unsigned char *)&data)[i];
+        txbuff[i + 2] = ((unsigned char *)&data)[i];
     }
-    if (Len == 0)
-    {
-        Send(&txbuff[0], 1);
-    }
-    else
-    {
-        Send(txbuff, Len + 1);
-    }
+
+    Send(txbuff, Len + 2);
+
     return 0;
 }
 
 int CommuBase::SetSendData(int cmd, short comid, short data, unsigned char Len)
 {
-    txbuff[0] = cmd << 4 | comid; //命令パケット
+    txbuff[0] = cmd;   //命令パケット
+    txbuff[1] = comid; //アクチュエータid
     for (int i = 0; i < Len; i++)
     {
-        txbuff[i + 1] = ((unsigned char *)&data)[i];
+        txbuff[i + 2] = ((unsigned char *)&data)[i];
     }
-    if (Len == 0)
-    {
-        Send(&txbuff[0], 1);
-    }
-    else
-    {
-        Send(txbuff, Len + 1);
-    }
+
+    Send(txbuff, Len + 2);
+
     return 0;
 }

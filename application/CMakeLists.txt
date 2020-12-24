@@ -1,5 +1,7 @@
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_FLAGS "-Wall -std=c++11")
+set(CMAKE_CXX_FLAGS_DEBUG "-g3 -O0 -pg")
+set(CMAKE_CXX_FLAGS_RELEASE "-O1 -s")
 set(PROJECT_NAME app)
 find_package(Boost 1.65.1 REQUIRED COMPONENTS date_time system)
 find_package(Threads REQUIRED)

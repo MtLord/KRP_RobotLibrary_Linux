@@ -6,7 +6,7 @@ class Sensor
     CommuBase *serial;
     int num;
     short requestdata = 0;
-    unsigned char requestlen = 0;
+    unsigned char requestlen = 4;
 
 public:
     Sensor(CommuBase *_serial, int _num) : serial(_serial), num(_num)
@@ -21,11 +21,11 @@ public:
 class MicroSw
 {
     CommuBase *serial;
-    int conenum = 0;
-    int boardnum = 1;
-    static unsigned char rxbuff[8];
+    int conenum;
+    int boardnum;
+    unsigned char rxbuff[8];
     short requestdata = 0;
-    unsigned char requestlen = 0;
+    unsigned char requestlen = 4;
 
 public:
     MicroSw(CommuBase *_serial, int _conenum, int brnum) : serial(_serial), conenum(_conenum), boardnum(brnum) //(CAN handle,connection number,board number)
