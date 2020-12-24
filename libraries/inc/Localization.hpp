@@ -6,7 +6,7 @@ class OddmePose
 {
 private:
     short requestdata = 0;
-    unsigned char requestlen = 0;
+    unsigned char requestlen = 4;
 
 protected:
     CommuBase *serial;
@@ -16,9 +16,9 @@ protected:
     float ShiftX = 0.26;
     float initX = 0;
     float initY = 0;
-    const int id_x = 0x1;
-    const int id_y = 0x2;
-    const int id_yaw = 0x3;
+    const int id_x = 1;
+    const int id_y = 2;
+    const int id_yaw = 3;
     float currentX = 0;
     float currentY = 0;
     float currentyaw = 0;

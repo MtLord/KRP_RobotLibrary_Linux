@@ -11,7 +11,7 @@ class Encoder
     static long countdata[8];
     float dist = 0;
     short requestdata = 0;
-    unsigned char requestlen = 0;
+    unsigned char requestlen = 4;
 
 public:
     Encoder(CommuBase *_serial, int num, unsigned char ID) : serial(_serial), board_ID(ID), enco_num(num)
