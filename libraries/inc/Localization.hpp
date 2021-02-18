@@ -19,9 +19,9 @@ protected:
     const int id_x = 1;
     const int id_y = 2;
     const int id_yaw = 3;
-    float currentX = 0;
+    float currentX = 0; //Lidarモードにすると角速度が返ってくる
     float currentY = 0;
-    float currentyaw = 0;
+    float currentyaw = 0; //Lidarモードにすると角速度が返ってくる
 
 public:
     OddmePose(CommuBase *_serial) : serial(_serial)
