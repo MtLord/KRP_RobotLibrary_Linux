@@ -15,7 +15,7 @@
 #include <sys/time.h>
 #include "cstring"
 
-/***************定義変数軍**********************/
+/***************定義変数群**********************/
 #define SERIAL_PORT "/dev/ttyACM0"
 #define STB 0x9E
 #define ENB 0xFF
