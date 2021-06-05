@@ -10,7 +10,7 @@ private:
     unsigned char getchar;
     int STB_RECIEVED = 0;
     struct termios tio;      // シリアル通信設定
-    int baudRate = B2000000; //2Mbps
+    int baudRate = B1000000; //1Mbps
 
     unsigned char get_serial_char();
 

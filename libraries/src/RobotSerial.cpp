@@ -34,6 +34,7 @@ unsigned char RobotSerial::get_serial_char()
 RobotSerial::~RobotSerial()
 {
     close(fd); // デバイスのクローズ
+    perror("device closed..\n");
 }
 
 int RobotSerial::PortConfig()

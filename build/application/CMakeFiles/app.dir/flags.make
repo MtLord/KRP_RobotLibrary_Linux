@@ -6,5 +6,5 @@ CXX_FLAGS = -Wall -std=c++11 -g3 -O0 -pg   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/yutakamiyama/KRP_RobotLibrary/libraries/inc 
+CXX_INCLUDES = -I/home/yutakamiyama/KRP_RobotLibrary_Linux/libraries/inc 
 
