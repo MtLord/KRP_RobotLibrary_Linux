@@ -1,6 +1,7 @@
 #include "MotorSystem.hpp"
 #include "MotorSystemDefintion.hpp"
 #include <stdio.h>
+#include <unistd.h>
 void MotorSystem::SetDuty(float d)
 {
     serial->SetSendData(SET_DUTY, this->commuincationID, d, datanum);
@@ -20,6 +21,7 @@ void MotorSystem::begin()
 {
     printf("Motor%d Intialize Start!\n", this->commuincationID);
     serial->SetSendData(BEGIN, this->commuincationID, reqestdata, requestlen);
+    usleep(10000);
     serial->SetReceevieData();
 
     if (serial->orderid == BEGIN && serial->actuid == commuincationID)

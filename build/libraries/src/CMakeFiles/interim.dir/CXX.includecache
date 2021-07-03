@@ -95,6 +95,8 @@ MotorSystemDefintion.hpp
 /home/yutakamiyama/KRP_RobotLibrary_Linux/libraries/src/MotorSystemDefintion.hpp
 stdio.h
 -
+unistd.h
+-
 
 /home/yutakamiyama/KRP_RobotLibrary_Linux/libraries/src/RobotSerial.cpp
 RobotSerial.hpp

@@ -49,6 +49,7 @@ int RobotSerial::PortConfig()
     {
         printf("%s opned\n", SERIAL_PORT);
     }
+    memset(&tio, 0, sizeof(tio));
     tio.c_cflag += CREAD;  // 受信有効
     tio.c_cflag += CLOCAL; // ローカルライン（モデム制御なし）
     tio.c_cflag += CS8;    // データビット:8bit

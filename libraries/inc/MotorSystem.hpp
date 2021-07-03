@@ -10,7 +10,7 @@ private:
     unsigned char datanum = 4;
 
     short reqestdata = 0;
-    unsigned char requestlen = 0;
+    unsigned char requestlen = 4;
 
 public:
     MotorSystem(CommuBase *_serial, unsigned short ID) : commuincationID(ID), serial(_serial)
