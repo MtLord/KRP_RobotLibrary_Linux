@@ -80,7 +80,7 @@ int RobotSerial::GetByte()
             rxbuf[i] = getchar;
             i++;
         }
-        if (getchar == ENB && STB_RECIEVED == 1)
+        if (i > 7)
         {
             //buf = rxbuf;
             STB_RECIEVED = 0;
@@ -93,6 +93,14 @@ int RobotSerial::GetByte()
 
 int RobotSerial::Send(unsigned char *buf, short size)
 {
-    write(fd, buf, size);
-    return 0;
+    int s_size = 0;
+    s_size = write(fd, buf, size);
+    if (s_size == size)
+    {
+        return 0;
+    }
+    else
+    {
+        return -1;
+    }
 }

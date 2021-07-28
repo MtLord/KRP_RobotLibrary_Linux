@@ -13,10 +13,10 @@
 struct LowlayerHandelTypedef
 {
 private:
-    CommuBase serial;
-    OddmePose oddm;
+        OddmePose oddm;
 
 public:
+    CommuBase serial;
     OddmePose *loca;
     MotorSystem M1, M2, M3, M4, M5, M6, M7, M8;
     Motor SM1, SM2, SM3, SM4, SM5, SM6, SM7, SM8, BR1, BR2;

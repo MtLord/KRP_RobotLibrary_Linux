@@ -13,7 +13,7 @@ public:
     {
         PortConfig(); //ポートの初期設定を行う
     }
-
+    int size = 0;
     float data = 0;
     unsigned short data_s1 = 0;
     unsigned short data_s2 = 0;

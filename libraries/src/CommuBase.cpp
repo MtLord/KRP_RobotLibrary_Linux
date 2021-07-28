@@ -33,7 +33,7 @@ int CommuBase::SetSendData(int cmd, short comid, float data, unsigned char Len)
         txbuff[i + 2] = ((unsigned char *)&data)[i];
     }
 
-    Send(txbuff, Len + 2);
+    size = Send(txbuff, Len + 2);
 
     return 0;
 }

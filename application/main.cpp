@@ -10,6 +10,12 @@ int main(int argc, char **argv)
 
     tim.Init(5);
     tim.Start();
+    hlow.Air1.open();
+    hlow.M1.SetVelocity(20);
+    hlow.M2.SetVelocity(20);
+    hlow.Air2.close();
+    hlow.M3.SetVelocity(40);
+    hlow.M4.SetVelocity(30);
     while (1)
     {
         if (RobotTimer::intflag)
